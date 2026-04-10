@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="CenterPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectregistrationform.SubjectController">
+   <children>
+      <TextField fx:id="TeacherNameTF" layoutX="40.0" layoutY="160.0" prefHeight="37.0" prefWidth="319.0" />
+      <TextField fx:id="TeacherName2TF" layoutX="460.0" layoutY="160.0" prefHeight="37.0" prefWidth="319.0" />
+      <TextField fx:id="SubjectNameTF" layoutX="40.0" layoutY="280.0" prefHeight="37.0" prefWidth="319.0" />
+      <TextField fx:id="AuthorNameTF" layoutX="40.0" layoutY="380.0" prefHeight="37.0" prefWidth="319.0" />
+      <TextField fx:id="AuthorName2TF" layoutX="460.0" layoutY="380.0" prefHeight="37.0" prefWidth="319.0" />
+      <Text fx:id="RegistrationForm" fill="#002c54" fontSmoothingType="LCD" layoutX="10.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subject Form" textAlignment="CENTER" wrappingWidth="287.6907958984375" x="250.0" y="50.0">
+         <font>
+            <Font name="Segoe UI" size="36.0" />
+         </font>
+      </Text>
+      <Text fx:id="PromptMessage" fill="#002c54" fontSmoothingType="LCD" layoutX="10.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fill out the form carefully for registration" wrappingWidth="323.4484558105469" x="240.0" y="80.0">
+         <font>
+            <Font name="Segoe UI Light" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="StudentName" fill="#002c54" fontSmoothingType="LCD" layoutX="40.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher Name" wrappingWidth="186.80300903320312">
+         <font>
+            <Font name="Segoe UI" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="FirstNameText" fill="#002c54" fontSmoothingType="LCD" layoutX="40.0" layoutY="220.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name" wrappingWidth="186.80300903320312">
+         <font>
+            <Font name="Segoe UI" size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="LastNameText" fill="#002c54" fontSmoothingType="LCD" layoutX="460.0" layoutY="220.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name" wrappingWidth="186.80300903320312">
+         <font>
+            <Font name="Segoe UI" size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="SubjectName" fill="#002c54" fontSmoothingType="LCD" layoutX="40.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subject Name" wrappingWidth="186.80300903320312">
+         <font>
+            <Font name="Segoe UI" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="AuthorName" fill="#002c54" fontSmoothingType="LCD" layoutX="40.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author Name" wrappingWidth="186.80300903320312">
+         <font>
+            <Font name="Segoe UI" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="LastNameText" fill="#002c54" fontSmoothingType="LCD" layoutX="465.0" layoutY="440.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name" wrappingWidth="186.80300903320312">
+         <font>
+            <Font name="Segoe UI" size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="FirstNameText" fill="#002c54" fontSmoothingType="LCD" layoutX="45.0" layoutY="440.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name" wrappingWidth="186.80300903320312">
+         <font>
+            <Font name="Segoe UI" size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="ADD" fill="#002c54" fontSmoothingType="LCD" layoutX="676.0" layoutY="562.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD" wrappingWidth="96.53689575195312">
+         <font>
+            <Font name="Segoe UI" size="27.0" />
+         </font>
+      </Text>
+      <FontAwesomeIcon fx:id="TeacherNameicon" fill="#c5001a" glyphName="USER" layoutX="201.0" layoutY="150.0" size="1.8em" text="" wrappingWidth="43.97761154174805">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </FontAwesomeIcon>
+      <FontAwesomeIcon fx:id="SubjectNameIcon" fill="#c5001a" glyphName="USER" layoutX="197.0" layoutY="270.0" size="1.8em" text="" wrappingWidth="43.97761154174805">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </FontAwesomeIcon>
+      <FontAwesomeIcon fx:id="AuthorNameIcon" fill="#c5001a" glyphName="USER" layoutX="195.0" layoutY="370.0" size="1.8em" text="" wrappingWidth="43.97761154174805">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </FontAwesomeIcon>
+      <FontAwesomeIcon fx:id="Addicon" fill="#c5001a" fontSmoothingType="LCD" glyphName="PLUS" layoutX="655.0" layoutY="561.0" size="1.8em" />
+      <Button fx:id="AddButton" layoutX="651.0" layoutY="541.0" mnemonicParsing="false" onAction="#addDataSubject" opacity="0.0" prefHeight="19.0" prefWidth="23.0" style="-fx-background-color: whitesmoke;;" />
+   </children>
+</Pane>
